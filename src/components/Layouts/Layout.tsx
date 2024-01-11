@@ -4,6 +4,7 @@ import Header from './Header'
 import { Inter } from 'next/font/google'
 import AboutNav from './AboutNav'
 import Footer from './Footer'
+import Loading from './Loading'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,7 @@ function Layout({children}:any) {
         <link rel="icon" href="/Logos/Nike.png" />
       </Head>
 
-{/* <Loading/> */}
+<Loading/>
 
 <AboutNav/>
 <Header/>
