@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 function Layout({children}:any) {
   return (
     <div 
-    className={`w-screen min-h-screen flex flex-col flex-1 overflow-x-hidden
+    className={`w-full overflow-x-hidden flex flex-col flex-1 overflow-y-auto min-h-screen bg-white
     ${inter?.className}
    `}>
       <Head>
@@ -20,7 +20,7 @@ function Layout({children}:any) {
         <meta name="description" content={'description'} />
         <meta charSet="utf-8" />
         <title>{'Nike'}</title>
-        <link rel="icon" href="/Logos/nike.png" />
+        <link rel="icon" href="/Logos/Nike.png" />
       </Head>
 
 {/* <Loading/> */}
@@ -29,7 +29,7 @@ function Layout({children}:any) {
 <Header/>
 
     <main
-    className='flex flex-col flex-1'
+    className='flex flex-col flex-1 w-full overflow-x-hidden'
     >
       {children}
     </main>
