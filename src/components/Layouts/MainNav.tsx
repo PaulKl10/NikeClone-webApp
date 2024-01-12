@@ -7,7 +7,7 @@ function MainNav() {
         className=''
         >
             <ul
-            className='flex space-x-3 items-center'
+            className='hidden lg:flex space-x-3 items-center'
             >
                 <li
                 className=' '

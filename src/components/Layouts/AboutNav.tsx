@@ -4,7 +4,8 @@ import React from 'react'
 function AboutNav() {
   return (
     <div
-      className='w-full px-12 py-2 bg-black bg-opacity-5 flex justify-between items-center'
+      className='hidden w-full px-12 py-2 bg-black bg-opacity-5 
+      lg:flex justify-between items-center'
       >
         <div
         className='flex flex-row space-x-3'

@@ -9,6 +9,6 @@
   }
 
   .icon-button{
-    @apply w-7 hover:opacity-50 cursor-pointer
+    @apply w-7 h-7 hover:opacity-50 cursor-pointer
   }
 }
