@@ -8,7 +8,7 @@ interface Props{
 }
 
 function HomePageNewProductsList({products}:Props) {
-  console.log('Our Products:', products)
+  // console.log('Our Products:', products)
   return (
     <ul
     className=' flex space-x-4 overflow-x-auto '

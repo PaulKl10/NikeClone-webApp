@@ -8,10 +8,11 @@ interface Props{
 
 export default function Home({products, variants}:Props) {
   
-  console.log('Our Variants:', variants)
+  
   return (
     <HomePageView
     products={products}
+    variants={variants}
     />
   )
 }
