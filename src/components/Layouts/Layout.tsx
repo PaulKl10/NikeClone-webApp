@@ -6,13 +6,12 @@ import AboutNav from './AboutNav'
 import Footer from './Footer'
 import Loading from './Loading'
 
-const inter = Inter({ subsets: ['latin'] })
 
 function Layout({children}:any) {
   return (
     <div 
     className={`w-full overflow-x-hidden flex flex-col flex-1 overflow-y-auto min-h-screen bg-white
-    ${inter?.className}
+    font-body
    `}>
       <Head>
       
