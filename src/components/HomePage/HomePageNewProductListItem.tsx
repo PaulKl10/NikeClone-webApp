@@ -53,7 +53,7 @@ function HomePageNewProductListItem({imageUrl = '', name = '', description = '',
             <p
             className='font-medium pt-1'
             >
-                {price.toFixed(2)} {'€'}
+                {price?.toFixed(2)} {'€'}
             </p>
         </div>
     </Link> 
