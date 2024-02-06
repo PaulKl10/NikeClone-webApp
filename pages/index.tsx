@@ -7,10 +7,12 @@ interface Props{
 }
 
 export default function Home({products, variants}:Props) {
-  console.log('Our Products:', products)
+  
   console.log('Our Variants:', variants)
   return (
-    <HomePageView/>
+    <HomePageView
+    products={products}
+    />
   )
 }
 

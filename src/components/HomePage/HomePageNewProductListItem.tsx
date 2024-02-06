@@ -23,7 +23,7 @@ function HomePageNewProductListItem({imageUrl = '', name = '', description = '',
         >
             {imageUrl && imageUrl.length > 0 ?
                 <Image
-                src={`/Images/${imageUrl}`}
+                src={imageUrl}
                 fill
                 className='object-cover'
                 alt=''

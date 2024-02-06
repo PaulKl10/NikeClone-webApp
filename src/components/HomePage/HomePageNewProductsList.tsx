@@ -1,35 +1,37 @@
 import React from 'react'
 import HomePageNewProductListItem from './HomePageNewProductListItem'
+import { urlFor } from '@/sanity'
 
-function HomePageNewProductsList() {
+interface Props{
+  products: any
+
+}
+
+function HomePageNewProductsList({products}:Props) {
+  console.log('Our Products:', products)
   return (
     <ul
     className=' flex space-x-4 overflow-x-auto '
     >
-      <HomePageNewProductListItem
-      imageUrl=''
-      name='Air Jordan 1'
-      description='Chaussure jordan'
-      price={50}
+      {
+        products && products.length > 0 
+        ?
+        products.map((product:any) =>
+        <HomePageNewProductListItem
+        key={product?._id}
+      imageUrl={product?.mainImage ? urlFor(product?.mainImage).url()! : `/Images/hado.jpg`}
+      name={product?.name}
+      description={product?.category?.name}
+      price={product?.price}
       />
-      <HomePageNewProductListItem
-      imageUrl='Hado.jpg'
-      name=' Jordan 1'
-      description='Chaussure jordan'
-      price={50}
-      />
-      <HomePageNewProductListItem
-      imageUrl='Hado.jpg'
-      name='Air Jordan 1'
-      description='Chaussure jordan'
-      price={50}
-      />
-      <HomePageNewProductListItem
-      imageUrl='Hado.jpg'
-      name='Air Jordan 1'
-      description='Chaussure jordan'
-      price={500}
-      />
+        )
+        :
+        <span>
+          {`No products yet`}
+        </span>
+      }
+      
+      
     </ul>
   )
 }

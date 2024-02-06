@@ -4,11 +4,18 @@ import HomePageBanner from '../components/HomePage/HomePageBanner'
 import Layout from '../components/Layouts/Layout'
 import HomePageNewProductSection from '../components/HomePage/HomePageNewProductSection'
 
-function HomePageView() {
+interface Props{
+  products: any
+  // variants: any
+}
+
+function HomePageView({products}:any) {
   return (
     <Layout>
       <HomePageBanner/>
-      <HomePageNewProductSection/>
+      <HomePageNewProductSection
+      products={products}
+      />
     </Layout>
   )
 }

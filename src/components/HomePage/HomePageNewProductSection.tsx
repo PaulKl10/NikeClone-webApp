@@ -2,7 +2,14 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid'
 import React from 'react'
 import HomePageNewProductsList from './HomePageNewProductsList'
 
-function HomePageNewProductSection() {
+interface Props{
+  products: any
+
+}
+
+function HomePageNewProductSection({products}: Props) {
+  
+
   return (
     <section
     className="w-full flex flex-col space-y-10 items-start px-12 py-14 overflow-hidden"
@@ -33,7 +40,9 @@ function HomePageNewProductSection() {
         </div>
       </div>
 
-      <HomePageNewProductsList/>
+      <HomePageNewProductsList
+      products={products}
+      />
     </section>
   )
 }
