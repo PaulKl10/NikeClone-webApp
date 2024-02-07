@@ -23,6 +23,7 @@ function HomePageNewProductsList({products}:Props) {
       name={product?.name}
       description={product?.category?.name}
       price={product?.price}
+      slug={product?.slug?.current}
       />
         )
         :

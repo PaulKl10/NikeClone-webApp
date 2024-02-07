@@ -7,15 +7,16 @@ interface Props {
     name: string
     description: string
     price: number
+    slug: string
 }
 
-function HomePageNewProductListItem({imageUrl = '', name = '', description = '', price = 0}: Props) {
+function HomePageNewProductListItem({imageUrl = '', name = '', description = '', price = 0, slug =''}: Props) {
   return (
     <li
     className='w-96'
     >
      <Link
-     href={`/products/oneProduct`}
+     href={`/products/${slug}`}
      className='flex flex-col'
      >
         <div
