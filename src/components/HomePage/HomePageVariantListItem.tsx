@@ -8,16 +8,17 @@ interface Props {
     description: string
     price: number
     color: string
+    _id: string
 }
 
 
-function HomePageVariantListItem({imageUrl = '', name = '', description = '', price = 0, color=''}: Props) {
+function HomePageVariantListItem({imageUrl = '', name = '', description = '', price = 0, color='', _id=''}: Props) {
   return (
     <li
     className='w-96'
     >
      <Link
-     href={`/products/oneProduct`}
+     href={`/variants/${_id}`}
      className='flex flex-col'
      >
         <div

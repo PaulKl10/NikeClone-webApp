@@ -40,6 +40,7 @@ export async function getServerSideProps() {
   //Fetch Product query
   const variantQuery = `
   *[_type == "variant"]{
+    _id,
     product->
     {
       _id,

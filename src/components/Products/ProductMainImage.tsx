@@ -1,23 +1,24 @@
+import { urlFor } from '@/sanity'
 import Image from 'next/image'
 import React from 'react'
 
-function ProductMainImage({imageUrl= `/Images/hado.jpg`} : any) {
+interface Props{
+  product: any
+}
+
+function ProductMainImage({product}:any) {
   return (
     <div
     className='relative w-1/3 h-[500px] rounded-xl overflow-hidden'
     >
-      {imageUrl && imageUrl.length > 0 ?
+      {product &&
                 <Image
-                src={imageUrl}
+                src={product?.mainImage ? urlFor(product?.mainImage).url()! : `/Images/hado.jpg`}
                 fill
                 className='object-cover'
-                alt=''
+                alt={product?.name}
                 />
-
-                :
-
-                <span>{`Pas d'image`}</span>
-                }
+      }
     </div>
   )
 }

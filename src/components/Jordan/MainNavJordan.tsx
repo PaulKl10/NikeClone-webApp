@@ -1,23 +1,23 @@
 import Link from 'next/link'
 import React from 'react'
 
-function MainNav() {
+function MainNavJordan() {
   return (
     <nav
         className=''
         >
             <ul
-            className='hidden lg:flex space-x-3 items-center'
+            className='hidden lg:flex gap-10 items-center'
             >
                 <li
                 className=' '
                 >
                     <Link
                     href={'/'}
-                    className='nav-link'
+                    className='nav-link hover:text-white'
                     >
                     <span>
-                        {`Trouver un magasin`}
+                        {`MEN`}
                     </span>
                     </Link>
                 </li>
@@ -26,10 +26,10 @@ function MainNav() {
                 >
                     <Link
                     href={'/jordan'}
-                    className='nav-link'
+                    className='nav-link hover:text-white'
                     >
                     <span>
-                        {`Jordan`}
+                        {`WOMEN`}
                     </span>
                     </Link>
                 </li>
@@ -38,10 +38,10 @@ function MainNav() {
                 >
                 <Link
                     href={'/'}
-                    className='nav-link'
+                    className='nav-link hover:text-white'
                     >
                     <span>
-                        {`Aide`}
+                        {`BOYS`}
                     </span>
                     </Link>
                 </li>
@@ -50,10 +50,10 @@ function MainNav() {
                 >
                 <Link
                     href={'/'}
-                    className='nav-link'
+                    className='nav-link hover:text-white'
                     >
                     <span>
-                        {`Nous rejoindre`}
+                        {`GIRLS`}
                     </span>
                     </Link>
                 </li>
@@ -62,10 +62,22 @@ function MainNav() {
                 >
                 <Link
                     href={'/'}
-                    className='nav-link'
+                    className='nav-link hover:text-white'
                     >
                     <span>
-                        {`S'identifier`}
+                        {`CUSTOMIZE`}
+                    </span>
+                    </Link>
+                </li>
+                <li
+                className=''
+                >
+                <Link
+                    href={'/'}
+                    className='nav-link hover:text-white'
+                    >
+                    <span>
+                        {`NIKE`}
                     </span>
                     </Link>
                 </li>
@@ -75,4 +87,4 @@ function MainNav() {
   )
 }
 
-export default MainNav
+export default MainNavJordan

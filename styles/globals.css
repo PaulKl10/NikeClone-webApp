@@ -10,10 +10,19 @@
   }
 
   .icon-button{
-    @apply w-7 h-7 hover:opacity-50 cursor-pointer
+    @apply w-7 h-7 cursor-pointer
   }
 
   .footer-main-link{
     @apply uppercase font-semibold text-sm
+  }
+  .backgroundOrangeNavBar{
+    background-color:#F54800
+  }
+  .BackgroundOrangeLogoNavBar{
+    background-color:#E24300
+  }
+  .backgroundMainJordan{
+    background-color: #FE4C00;
   }
 }

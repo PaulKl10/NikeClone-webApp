@@ -12,7 +12,7 @@ function Product({product}:any) {
   console.log(product)
 
   return (
-    <ProductView/>
+    <ProductView product={product}/>
   )
 }
 

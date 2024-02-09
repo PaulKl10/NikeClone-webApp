@@ -18,11 +18,12 @@ function HomePageVariantList({variants}: Props) {
         variants.map((variant:any) =>
         <HomePageVariantListItem
         key={variant?._id}
-      imageUrl={variant?.mainImage ? urlFor(variant?.mainImage).url()! : `/Images/hado.jpg`}
-      name={variant?.product?.name}
-      description={variant?.product?.category?.name}
-      price={variant?.product?.price}
-      color={variant?.color?.value}
+        imageUrl={variant?.mainImage ? urlFor(variant?.mainImage).url()! : `/Images/hado.jpg`}
+        name={variant?.product?.name}
+        description={variant?.product?.category?.name}
+        price={variant?.product?.price}
+        color={variant?.color?.value}
+        _id={variant?._id}
       />
         )
         :
